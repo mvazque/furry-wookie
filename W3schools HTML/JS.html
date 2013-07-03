@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function fibbin(ind){
+	alert(ind)
+	var index = ind;
+	var ans = 0;
+	if(index == 1) ans = 1;
+	else if(index > 1){
+		var a = 0;
+		var b = 1;
+		for (var i = 1; i < index; i++){
+			b = b + a;
+			a = b - a;
+			console.log("b");
+		}
+		ans = b;
+	}
+	alert(ans);
+	return ans;
+}
+</script>
+</head>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<FORM NAME="test">
+<H2>Enter something into the field and press the button. <br>
+Please try this a few times.</H2>
+<P>Enter your First Name: <INPUT TYPE="TEXT" NAME="firstName"><BR><BR>
+<INPUT TYPE="Button" Value="Submit" onClick="fibbin(this.form)">
+</P>
+</FORM>
+
+
+
+
+
+<p id="demo">
+Anwer
+</p>
+
+
+</body>
+</html> 
